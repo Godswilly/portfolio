@@ -20,6 +20,17 @@ a button {
   font-weight: bolder;
 }
 
+.media_div a {
+  height: 4rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
+
+.media_links:hover {
+  border-bottom: solid #605b81;
+  border-radius: 0;
+}
+
 a button:hover {
   background-color: #8d7bf7;
   color: white;
@@ -29,28 +40,39 @@ main {
   background: linear-gradient(to left bottom, #605b81, #8d7bf7);
 }
 
-.media_icons {
-  width: 3rem;
-  padding: 0;
+.glass_bg {
+  margin: 2rem 0;
+  width: 80%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.6)
+  );
+  border-radius: 1.5rem;
 }
 
-.close_modal {
-  background-color: #8d7bf7;
-  color: white;
+.border_mine {
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
 }
 
-.contact_modal_content {
-  position: relative;
-  border-radius: 1rem;
+.profile_side {
+  flex: 2;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
 }
 
-.contact_modal_content h5 {
-  border-bottom: solid 2px black;
+.content_side {
+  display: flex;
+  flex: 4;
+  align-items: center;
+  height: 90%;
 }
 
-.media_icons_angel {
-  width: 2rem;
-  height: 3rem;
+.content_side h2,
+.content_side p,
+.content_side div {
+  text-align: center;
 }
 
 .profile_content {
@@ -64,62 +86,51 @@ main {
   border-radius: 50%;
 }
 
-nav {
-  height: 2rem;
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.5),
-    rgba(255, 255, 255, 0.6)
-  );
+.media_div {
+  margin: 4rem 0;
 }
 
-.download_CV {
-  margin: 2rem 0 0 0;
-  background: linear-gradient(to left bottom, #605b81, #8d7bf7);
-  width: 80%;
-  border-radius: 0.5rem;
-  height: 5rem;
+.media_icons {
+  width: 3rem;
+  padding: 0;
 }
 
-.download_CV p {
-  margin-left: 1rem;
-  color: white;
+.media_icons_angel {
+  width: 2rem;
+  height: 3rem;
 }
 
-.modal_links:hover {
+.email_icon {
+  width: 3rem;
+}
+
+.more_link:hover {
   text-decoration: underline;
 }
 
-.close_modal {
-  background-color: #8d7bf7;
-  color: white;
+.projects_container {
+  margin: 1rem 0;
 }
 
-.contact_modal_content h5 {
-  border-bottom: solid 2px black;
-}
-
-li p {
-  color: #38385f;
-  font-weight: bolder;
-  cursor: pointer;
-}
-
-.media_div a {
-  height: 4rem;
-  margin: 1rem;
-  border-radius: 0.5rem;
-}
-
-.glass_bg {
-  margin: 2rem 0;
-  width: 80%;
+.projects {
+  width: 75%;
+  margin: 3rem 3rem;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
   background: linear-gradient(
     to right bottom,
-    rgba(255, 255, 255, 0.5),
-    rgba(255, 255, 255, 0.6)
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.2)
   );
-  border-radius: 1.5rem;
+  box-shadow: 2px 2px rgba(66, 66, 66, 0.233);
+}
+
+.project_pic {
+  width: 40%;
+}
+
+.project_desc {
+  flex: 3;
 }
 
 .skill_set {
@@ -137,6 +148,21 @@ li p {
   margin: 1.5rem 1rem;
 }
 
+.h-adjust {
+  width: 20%;
+}
+
+.project_desc p {
+  width: 80%;
+  margin-top: 1rem;
+}
+
+.project_desc a,
+.project_desc button {
+  margin: 0.5rem 0 0 0;
+  padding: 0.2rem 0;
+  width: 80%;
+}
 
 .CV_image {
   width: 15%;
@@ -157,7 +183,51 @@ li p {
   color: white;
 }
 
-.media_links:hover {
-  border-bottom: solid #605b81;
-  border-radius: 0;
+nav {
+  height: 2rem;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.6)
+  );
+}
+
+.contact_modal_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.active_modal {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal_links:hover {
+  text-decoration: underline;
+}
+
+.close_modal {
+  background-color: #8d7bf7;
+  color: white;
+}
+
+.contact_modal_content {
+  position: relative;
+  border-radius: 1rem;
+}
+
+.contact_modal_content h5 {
+  border-bottom: solid 2px black;
+}
+
+li p {
+  color: #38385f;
+  font-weight: bolder;
+  cursor: pointer;
 }
