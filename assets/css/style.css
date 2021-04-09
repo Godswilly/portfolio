@@ -231,3 +231,33 @@ li p {
   font-weight: bolder;
   cursor: pointer;
 }
+
+@media screen and (max-width: 940px) {
+  .skills_icons {
+    width: 8%;
+    margin: 0.5rem 0rem;
+  }
+
+  .projects {
+    margin: 2rem 1rem;
+    padding: 1rem 1rem;
+  }
+
+  .project_pic {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .projects {
+    padding: 1rem 0.1rem;
+  }
+
+  .projects h3 {
+    margin-top: 0.5rem;
+  }
+
+  .project_pic {
+    width: 80%;
+  }
+}
