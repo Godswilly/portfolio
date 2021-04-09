@@ -27,7 +27,7 @@ a button {
 }
 
 .media_links:hover {
-  border-bottom: solid #605b81;
+  border-bottom: solid #53396b;
   border-radius: 0;
 }
 
@@ -39,18 +39,18 @@ a button {
 }
 
 li p {
-  color: #38385f;
+  color: #31317e57;
   font-weight: bolder;
   cursor: pointer;
 }
 
 a button:hover {
-  background-color: #8d7bf7;
+  background-color: #4e38ca;
   color: white;
 }
 
 main {
-  background: linear-gradient(to left bottom, #605b81, #8d7bf7);
+  background: linear-gradient(to left bottom, #736aaf, #6253b8);
 }
 
 .glass_bg {
