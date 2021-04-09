@@ -104,3 +104,60 @@ li p {
   font-weight: bolder;
   cursor: pointer;
 }
+
+.media_div a {
+  height: 4rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
+
+.glass_bg {
+  margin: 2rem 0;
+  width: 80%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.6)
+  );
+  border-radius: 1.5rem;
+}
+
+.skill_set {
+  margin-top: 2rem;
+}
+
+.skill_text {
+  font-size: 1.5rem;
+}
+
+.skills_icons {
+  width: 13%;
+  max-width: 3rem;
+  height: 3rem;
+  margin: 1.5rem 1rem;
+}
+
+
+.CV_image {
+  width: 15%;
+  max-width: 2rem;
+  max-height: 3rem;
+}
+
+.download_CV {
+  margin: 2rem 0 0 0;
+  background: linear-gradient(to left bottom, #605b81, #8d7bf7);
+  width: 80%;
+  border-radius: 0.5rem;
+  height: 5rem;
+}
+
+.download_CV p {
+  margin-left: 1rem;
+  color: white;
+}
+
+.media_links:hover {
+  border-bottom: solid #605b81;
+  border-radius: 0;
+}
