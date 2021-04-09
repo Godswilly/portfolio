@@ -52,3 +52,55 @@ main {
   width: 2rem;
   height: 3rem;
 }
+
+.profile_content {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 12px;
+}
+
+.profile_pic {
+  max-width: 5rem;
+  border-radius: 50%;
+}
+
+nav {
+  height: 2rem;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.6)
+  );
+}
+
+.download_CV {
+  margin: 2rem 0 0 0;
+  background: linear-gradient(to left bottom, #605b81, #8d7bf7);
+  width: 80%;
+  border-radius: 0.5rem;
+  height: 5rem;
+}
+
+.download_CV p {
+  margin-left: 1rem;
+  color: white;
+}
+
+.modal_links:hover {
+  text-decoration: underline;
+}
+
+.close_modal {
+  background-color: #8d7bf7;
+  color: white;
+}
+
+.contact_modal_content h5 {
+  border-bottom: solid 2px black;
+}
+
+li p {
+  color: #38385f;
+  font-weight: bolder;
+  cursor: pointer;
+}
